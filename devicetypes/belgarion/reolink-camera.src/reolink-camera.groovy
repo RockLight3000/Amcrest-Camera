@@ -3,6 +3,9 @@
  *
  *  Copyright 2016 Belgarion (programmer_dave@yahoo.com)
  *
+ *  I'm not a programmer so I am just changing his code.  THANKS!!! :)
+ *  NOTE: ONLY WORKING WITH RTSP for Now.
+ *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  *  in compliance with the License. You may obtain a copy of the License at:
  *
@@ -97,7 +100,7 @@ metadata {
     }
 
     preferences {
-        input(title: "", description:"Amcrest Camera Handler v${appVersion()}", displayDuringSetup: false, type: "paragraph", element: "paragraph")
+        input(title: "", description:"Reolink Camera Handler v${appVersion()}", displayDuringSetup: false, type: "paragraph", element: "paragraph")
         input("camIP", "string", title: "Hostname or IP Address", description: "Enter the Hostname or IP Address of the camera", required: true, displayDuringSetup: true)
         input("camPort", "string", title: "Port", description: "Enter the Port Number to use (a local IP typically uses 80)", required: true, displayDuringSetup: true)
         input(title: "", description:"Enter the RTSP Port Number to use (normally 554) when viewing an RTSP video stream.", displayDuringSetup: false, type: "paragraph", element: "paragraph")
